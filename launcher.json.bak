@@ -1,0 +1,16 @@
+{
+  "nick": "zwur",
+  "ramMb": 5120,
+  "width": 1280,
+  "height": 720,
+  "fullscreen": true,
+  "hideOnLaunch": true,
+  "showConsole": false,
+  "withVisuals": true,
+  "russian": true,
+  "javaArgs": "",
+  "gc": "G1 (рекомендуется)",
+  "parallel": 16,
+  "clientId": "",
+  "optMods": true
+}

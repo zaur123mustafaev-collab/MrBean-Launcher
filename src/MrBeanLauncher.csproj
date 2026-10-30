@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>MrBeanLauncher</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="MrBeanLauncher.Assets.hero.jpg" />
+    <None Remove="MrBeanLauncher.Assets.bg.jpg" />
+    <None Remove="MrBeanLauncher.Assets.face.png" />
+    <None Remove="MrBeanLauncher.Assets.MrBeanVisuals.jar" />
+    <EmbeddedResource Include="MrBeanLauncher.Assets.hero.jpg" LogicalName="MrBeanLauncher.Assets.hero.jpg" />
+    <EmbeddedResource Include="MrBeanLauncher.Assets.bg.jpg" LogicalName="MrBeanLauncher.Assets.bg.jpg" />
+    <EmbeddedResource Include="MrBeanLauncher.Assets.face.png" LogicalName="MrBeanLauncher.Assets.face.png" />
+    <EmbeddedResource Include="MrBeanLauncher.Assets.MrBeanVisuals.jar" LogicalName="MrBeanLauncher.Assets.MrBeanVisuals.jar" />
+    <ApplicationConfig Remove="MrBeanLauncher.exe.config" />
+    <ApplicationConfig Include="MrBeanLauncher.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+</Project>
